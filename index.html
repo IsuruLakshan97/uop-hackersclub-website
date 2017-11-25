@@ -66,11 +66,38 @@
 	  
 	  .sectionevent{
 		height:100vh;
-		background-color:#000000;
+		background-color:#000011;
 	  }
 	  
+	  .eventblock{
+		background-color:#004400;
+		display: inline-block;
+	  }
+	  .eventdate{
+		background-color:#000001;
+		width:200px;
+		//display:inline-block;
+	  }
+	  .eventdesc{
+		background-color:#222222;
+		//display: block;
+	  }
+	  .eventtextmonth{
+		
+	  }
+	  .eventtextdate{
+	  
+	  }
+	  .eventtext{
+	  
+	  }
+	  
+	  .sectionmedia{
+		height:100vh;
+		background-color:#000000;
+	  }
 	  .sectioncommitte{
-		background-color:#000011;
+		background-color:#000015;
 	  }
 	  
 	  .committemember{
@@ -88,9 +115,15 @@
 	  
 	  
 	  .sectioncontact{
+		height:100vh;
 		background-color:#000000;
 	  }
 	  
+	  .footer{
+		padding-top:30px;
+		padding-bottom:20px;
+		background-color:#001316;
+	  }
     </style>
 
   </head>
@@ -125,6 +158,9 @@
               <a class="nav-link" href="#events">events</a>
             </li>
 			<li class="nav-item">
+              <a class="nav-link" href="#media">media</a>
+            </li>
+			<li class="nav-item">
               <a class="nav-link" href="#committee">committee</a>
             </li>
 			<li class="nav-item">
@@ -143,14 +179,14 @@
 	
 	<div class="container-fluid sectionhome" id="home">
 		<!--img src="assests/home-2.jpeg" alt="Los Angeles" style="height:100vh;"-->
-			<img src="assests/logo-grey.png" alt="HACKERS' CLUB" style="height:100vh;">
+			<!--img src="assests/logo-grey.png" alt="HACKERS' CLUB" style="height:100vh;"-->
 			<div class="carousel-caption">
 			  <h3 class="titlepadding">HACKERS' CLUB</h3>
 			  <p class="taglinepadding">University of Peradeniya</p>
 			</div>
     </div>
 	
-    <div class="container-fluid onepagesection sectionabout" id="about">
+    <div class="container onepagesection sectionabout" id="about">
       <div class="row">
         <div class="col text-center">
 			<div class="col text-center visionmission">
@@ -165,7 +201,7 @@
       </div>
     </div>
 	
-	<div class="container-fluid onepagesection sectionvision" id="vision">
+	<div class="container onepagesection sectionvision" id="vision">
       <div class="row">
         <div class="col text-center visionmission">
 			<blockquote class="blockquote">
@@ -188,9 +224,27 @@
 	  
     </div>
 	
-	<div class="container-fluid onepagesection sectionevent" id="events">
+	<div class="container onepagesection sectionevent" id="events">
 		<h5 class="titlepadding text-center">Events</h5>
+		
+		<div class="row">
+			<div class="col eventdate">
+				<p class="textmonth">JAN</p>
+				<h4 class="textdate">12</h4>
+			</div>
+			<div class="col eventdesc">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
 
+    </div>
+	
+	
+	<div class="container-fluid onepagesection sectionmedia" id="media">
+		<h5 class="titlepadding text-center">Media</h5>
+		
+		<div class="row">
 		
     </div>
 	
@@ -202,6 +256,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -211,6 +266,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -220,6 +276,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -229,6 +286,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -241,6 +299,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -250,6 +309,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -259,6 +319,7 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">sgag</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
 				<a href="#" class="card-link">Card link</a>
 				<a href="#" class="card-link">Another link</a>
@@ -268,9 +329,10 @@
 		<div class="col text-center committemember">
 			<img src="assests/logo-grey.png" class="img-thumbnail" alt="Cinque Terre" width="150px"> 
 			<div class="card-body">
+				<h6 class="card-title">Chandima B Samarasinghe</h6>
 				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				<a href="#" class="card-link">Card link</a>
-				<a href="#" class="card-link">Another link</a>
+				<a href="mailto:chandi2398@gmail.com" class="card-link">email</a>
+				<a href="https://chandimab.github.io" class="card-link">github</a>
 			 </div>
         </div>
 		
@@ -279,14 +341,17 @@
       </div>
     </div>
 	
-	<div class="container-fluid onepagesection sectioncontact" id="contact">
+	<div class="container onepagesection sectioncontact" id="contact">
 		<h5 class="titlepadding text-center">Contact</h5>
-      <div class="row">
-        <div class="col text-center">
-			
-        </div>
-      </div>
+		
     </div>
+	
+	
+	<div class="container-fluid footer text-center">
+		<p class="text-primary">Copyright © 2018 HACKERS' CLUB, University of Peradeniya. All rights reserved.</p>
+
+	</div>
+	
 	
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
