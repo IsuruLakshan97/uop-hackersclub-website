@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/cyborg-bootstrap.min.css" rel="stylesheet">
 	
+		
     <!-- Custom styles for this template -->
     <style>
       body {
@@ -126,6 +127,71 @@
 	  }
     </style>
 
+	<style>
+		.myimageslider{
+			margin-top:-60px;
+		}
+		.sliderimage{
+			width:100%;
+		}
+		.slidercontroller{
+			position: absolute;
+			top: 50%; /* pushes the icon in the middle of the height */
+			z-index: 5;
+			display: inline-block;
+			
+			//background-color:rgba(0,0,0,0.4);
+			
+			padding-top:20px;
+			padding-right:0;
+			padding-bottom:20px;
+			padding-left:0;
+			
+		}
+		.sliderbutton-left{
+			display: inline-block;
+			float: left !important;
+			background-color:rgba(0,0,0,0.4);
+			
+			padding-top:30px;
+			padding-right:20px;
+			padding-bottom:30px;
+			padding-left:15px;
+		}
+		.sliderbutton-left:hover{
+			display: inline-block;
+			float: left !important;
+			background-color:rgba(0,0,0,0.8);
+			
+			padding-top:30px;
+			padding-right:20px;
+			padding-bottom:30px;
+			padding-left:15px;
+		}
+		
+		.sliderbutton-right{
+			display: inline-block;
+			float: right !important;
+			background-color:rgba(0,0,0,0.4);
+			
+			padding-top:30px;
+			padding-right:15px;
+			padding-bottom:30px;
+			padding-left:20px;
+		}
+		.sliderbutton-right:hover{
+			display: inline-block;
+			float: right !important;
+			background-color:rgba(0,0,0,0.8);
+			
+			padding-top:30px;
+			padding-right:15px;
+			padding-bottom:30px;
+			padding-left:20px;
+		}
+		
+	</style>
+	
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="10">
@@ -177,13 +243,47 @@
 	<!-- Page Content -->
 	
 	
-	<div class="container-fluid sectionhome" id="home">
-		<!--img src="assests/home-2.jpeg" alt="Los Angeles" style="height:100vh;"-->
-			<!--img src="assests/logo-grey.png" alt="HACKERS' CLUB" style="height:100vh;"-->
-			<div class="carousel-caption">
-			  <h3 class="titlepadding">HACKERS' CLUB</h3>
-			  <p class="taglinepadding">University of Peradeniya</p>
+	
+	<div class="" id="home">
+		<div class="myimageslider">
+		<!-- slider images -->
+				<img class="sliderimage" src="assests/1.jpg">
+				<img class="sliderimage" src="assests/2.jpg">
+				<img class="sliderimage" src="assests/3.jpg">
+		<!-- slider controllers-->
+			<div class="slidercontroller container-fluid">
+				<span class="sliderbutton-left" onclick="incrementDiv(1)">&#10094;
+				</span>
+				<span class="sliderbutton-right" onclick="incrementDiv(-1)">&#10095;				
+				</div>
 			</div>
+		<!-- slider js-->
+			<Script>
+				var slideindex=1;
+				showDivs(slideindex); //show startup slide
+				
+				function incrementDiv(increment){
+					showDivs(slideindex+=increment);
+				}
+				
+				function showDivs(n){
+					//alert("showdiv");
+					var i;
+					var slides=document.getElementsByClassName("sliderimage"); //slider elements array
+					
+					if(n>slides.length){slideindex=1;} //upper boundry check
+					if(n<1){slideindex=slides.length;} //lower boundry check
+					
+					for(i=0;i<slides.length;i++){ //hiding all slides
+						slides[i].style.display = "none";
+					}
+					
+					slides[slideindex-1].style.display="block"; //display slideindex
+				
+				}
+			</script>
+		</div>
+	
     </div>
 	
     <div class="container onepagesection sectionabout" id="about">
