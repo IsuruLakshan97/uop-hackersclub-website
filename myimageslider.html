@@ -1,0 +1,42 @@
+<div class="myimageslider">
+		<!-- slider images -->
+				<img class="sliderimage" src="assests/imageslider/1.jpg">
+				<img class="sliderimage" src="assests/imageslider/2.jpg">
+				<img class="sliderimage" src="assests/imageslider/3.jpg">
+		<!-- slider controllers-->
+			<div class="slidercontroller container-fluid">
+				<span class="sliderbutton-left" onclick="incrementDiv(1)">&#10094;
+				</span>
+				<span class="sliderbutton-right" onclick="incrementDiv(-1)">&#10095;				
+				</div>
+			</div>
+		<!-- slider js-->
+			<Script>
+				var slideindex=1;
+				showDivs(slideindex); //show startup slide
+
+				window.setInterval(function(){
+				  incrementDiv(1);
+				}, 5000);
+
+				function incrementDiv(increment){
+					showDivs(slideindex+=increment);
+				}
+				
+				function showDivs(n){
+					//alert("showdiv");
+					var i;
+					var slides=document.getElementsByClassName("sliderimage"); //slider elements array
+					
+					if(n>slides.length){slideindex=1;} //upper boundry check
+					if(n<1){slideindex=slides.length;} //lower boundry check
+					
+					for(i=0;i<slides.length;i++){ //hiding all slides
+						slides[i].style.display = "none";
+					}
+					
+					slides[slideindex-1].style.display="block"; //display slideindex
+					
+				}
+			</script>
+		</div>

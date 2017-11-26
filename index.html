@@ -13,7 +13,6 @@
     <link href="vendor/bootstrap/css/cyborg-bootstrap.min.css" rel="stylesheet">
 	
 	
-	
 		
     <!-- Custom styles for this template -->
     <style>
@@ -40,9 +39,16 @@
 		padding-top:50px;
 		padding-bottom:50px;
 	  }
+	  
 	  .sectionhome{
 		height:100vh;
 		margin-top:20px;
+		background-color:#000000;
+	  }
+	  
+	  #home{
+		//height:100vh;
+		margin-top:-60px;
 		background-color:#000000;
 	  }
 	  
@@ -59,7 +65,7 @@
 	  }
 	  
 	  .sectionvision{
-		background-color:#000015;
+		background-color:#000018;
 		padding-left:50px;
 		padding-right:50px;
 	  }
@@ -115,7 +121,7 @@
 		background-color:#000000;
 	  }
 	  .sectioncommitte{
-		background-color:#000015;
+		background-color:#000018;
 		
 	  }
 	  
@@ -261,51 +267,33 @@
 
 	
 	<!-- Page Content -->
-	
-	
 	<div class="" id="home">
-		<div class="myimageslider">
-		<!-- slider images -->
-				<img class="sliderimage" src="assests/imageslider/1.jpg">
-				<img class="sliderimage" src="assests/imageslider/2.jpg">
-				<img class="sliderimage" src="assests/imageslider/3.jpg">
-		<!-- slider controllers-->
-			<div class="slidercontroller container-fluid">
-				<span class="sliderbutton-left" onclick="incrementDiv(1)">&#10094;
-				</span>
-				<span class="sliderbutton-right" onclick="incrementDiv(-1)">&#10095;				
-				</div>
+		<!-- slider style sheet-->
+		<link rel="stylesheet" href="vendor/bootstrap/css/slider-style.css">
+		<link rel='stylesheet prefetch' href='vendor/bootstrap/css/slider-global.css'>
+		<!-- html markup -->
+		<div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+			<div class="carousel-inner" role="listbox">
+			  <div class="item active background a"></div>
+			  <div class="item background b"></div>
+			  <div class="item background c"></div>
 			</div>
-		<!-- slider js-->
-			<Script>
-				var slideindex=1;
-				showDivs(slideindex); //show startup slide
+			</div>
 
-				window.setInterval(function(){
-				  incrementDiv(1);
-				}, 5000);
-
-				function incrementDiv(increment){
-					showDivs(slideindex+=increment);
-				}
-				
-				function showDivs(n){
-					//alert("showdiv");
-					var i;
-					var slides=document.getElementsByClassName("sliderimage"); //slider elements array
-					
-					if(n>slides.length){slideindex=1;} //upper boundry check
-					if(n<1){slideindex=slides.length;} //lower boundry check
-					
-					for(i=0;i<slides.length;i++){ //hiding all slides
-						slides[i].style.display = "none";
-					}
-					
-					slides[slideindex-1].style.display="block"; //display slideindex
-					
-				}
-			</script>
+			<!--div class="covertext">
+			<div class="col-lg-10" style="float:none; margin:0 auto;">
+			  <h1 class="title">ELINE</h1>
+			  <h3 class="subtitle">A Tidy, Clean, Easy-to-Use, and Responsive Landing Page Template</h3>
+			</div>
+			<div class="col-xs-12 explore">
+			  <a href="#"><button type="button" class="btn btn-lg explorebtn">EXPLORE</button></a>
+			</div-->
 		</div>
+		<!-- slider script -->
+		<script  src="vendor/bootstrap/js/slider-js.js"></script>
+		<!-- bootstrap main script -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+		<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
 	
     </div>
 	
@@ -449,6 +437,7 @@
 	
 	<div class="container-fluid onepagesection sectionmedia" id="media">
 		<h5 class="titlepadding text-center">Media</h5>
+		
 		
 		
   	
