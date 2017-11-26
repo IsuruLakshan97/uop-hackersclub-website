@@ -45,6 +45,7 @@
 	  }
 	  
 	  .titlepadding{
+		margin-top:20px;
 		padding:20px;
 	  }
 	  .taglinepadding{
@@ -66,28 +67,42 @@
 	  }
 	  
 	  .sectionevent{
-		height:100vh;
-		background-color:#000011;
+		background-color:#000000;
 	  }
 	  
 	  .eventblock{
 		background-color:#004400;
-		display: inline-block;
+		//display: inline-block;
+		
+		margin-top:20px;
+		margin-bottom:10px;
+		margin-left:100px;
+		margin-right:100px;
 	  }
 	  .eventdate{
 		background-color:#000001;
 		width:200px;
+		text-align: center;
 		//display:inline-block;
 	  }
-	  .eventdesc{
+	  .eventdesc-dark{
+		background-color:#111111;
+		//display: block;
+	  }
+	  .eventdesc-light{
 		background-color:#222222;
 		//display: block;
 	  }
 	  .eventtextmonth{
-		
+		text-align: center;
+		padding-top:10px;
 	  }
 	  .eventtextdate{
-	  
+		text-align: center;
+		margin-bottom:10px;
+	  }
+	  .eventheader{
+		margin-top:10px;
 	  }
 	  .eventtext{
 	  
@@ -99,16 +114,15 @@
 	  }
 	  .sectioncommitte{
 		background-color:#000015;
+		
 	  }
 	  
 	  .committemember{
-
 		padding:20px;
 		margin:10px;
 		background:#000011;
 	  }
 	  .committemember:hover{
-
 		padding:20px;
 		margin:10px;
 		background:#000044;
@@ -136,7 +150,7 @@
 		}
 		.slidercontroller{
 			position: absolute;
-			top: 50%; /* pushes the icon in the middle of the height */
+			top: 45%; /* pushes the icon in the middle of the height */
 			z-index: 5;
 			display: inline-block;
 			
@@ -247,9 +261,9 @@
 	<div class="" id="home">
 		<div class="myimageslider">
 		<!-- slider images -->
-				<img class="sliderimage" src="assests/1.jpg">
-				<img class="sliderimage" src="assests/2.jpg">
-				<img class="sliderimage" src="assests/3.jpg">
+				<img class="sliderimage" src="assests/imageslider/1.jpg">
+				<img class="sliderimage" src="assests/imageslider/2.jpg">
+				<img class="sliderimage" src="assests/imageslider/3.jpg">
 		<!-- slider controllers-->
 			<div class="slidercontroller container-fluid">
 				<span class="sliderbutton-left" onclick="incrementDiv(1)">&#10094;
@@ -301,7 +315,7 @@
       </div>
     </div>
 	
-	<div class="container onepagesection sectionvision" id="vision">
+	<div class="container-fluid onepagesection sectionvision" id="vision">
       <div class="row">
         <div class="col text-center visionmission">
 			<blockquote class="blockquote">
@@ -324,19 +338,102 @@
 	  
     </div>
 	
-	<div class="container onepagesection sectionevent" id="events">
+	<div class="container-fluid onepagesection sectionevent" id="events">
 		<h5 class="titlepadding text-center">Events</h5>
 		
-		<div class="row">
-			<div class="col eventdate">
-				<p class="textmonth">JAN</p>
-				<h4 class="textdate">12</h4>
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
 			</div>
-			<div class="col eventdesc">
+			<div class="col-11 eventdesc-dark">
 				<h6 class="eventheader">event1</h6>
 				<p class="eventtext">event agigliogjaghu</p>
 			</div>
 		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-dark">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+		
+		<div class="row eventblock">
+			<div class="col-1 eventdate">
+				<p class="eventtextmonth">JAN</p>
+				<h4 class="eventtextdate">12</h4>
+			</div>
+			<div class="col-11 eventdesc-light">
+				<h6 class="eventheader">event1</h6>
+				<p class="eventtext">event agigliogjaghu</p>
+			</div>
+		</div>
+		
+
 
     </div>
 	
@@ -349,7 +446,6 @@
     </div>
 	
 	<div class="container-fluid onepagesection sectioncommitte" id="committee">
-	  
 	  <h5 class="titlepadding text-center">Committee</h5>
       
 	  <div class="row">
@@ -435,13 +531,12 @@
 				<a href="https://chandimab.github.io" class="card-link">github</a>
 			 </div>
         </div>
-		
       </div>
 		
       </div>
     </div>
 	
-	<div class="container onepagesection sectioncontact" id="contact">
+	<div class="container-fluid onepagesection sectioncontact" id="contact">
 		<h5 class="titlepadding text-center">Contact</h5>
 		
     </div>
