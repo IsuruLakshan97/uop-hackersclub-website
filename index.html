@@ -12,6 +12,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/cyborg-bootstrap.min.css" rel="stylesheet">
 	
+	
+	
 		
     <!-- Custom styles for this template -->
     <style>
@@ -25,7 +27,7 @@
       }
 	  
 	  .navbar-normal{
-		background-color:rgba(0,0,0,0.7);
+		background-color:rgba(0,0,0,0.8);
 	  }
 	  .navbar-scrolled{
 		
@@ -206,6 +208,10 @@
 		
 	</style>
 	
+	<style>
+		
+	</style>
+	
   </head>
 
   <body data-spy="scroll" data-target=".navbar" data-offset="10">
@@ -232,7 +238,7 @@
               <a class="nav-link" href="#about">about</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#vision">vision n mission</a>
+              <a class="nav-link" href="#vision">vision | mission</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link" href="#events">events</a>
@@ -257,7 +263,6 @@
 	<!-- Page Content -->
 	
 	
-	
 	<div class="" id="home">
 		<div class="myimageslider">
 		<!-- slider images -->
@@ -275,7 +280,11 @@
 			<Script>
 				var slideindex=1;
 				showDivs(slideindex); //show startup slide
-				
+
+				window.setInterval(function(){
+				  incrementDiv(1);
+				}, 5000);
+
 				function incrementDiv(increment){
 					showDivs(slideindex+=increment);
 				}
@@ -293,7 +302,7 @@
 					}
 					
 					slides[slideindex-1].style.display="block"; //display slideindex
-				
+					
 				}
 			</script>
 		</div>
@@ -442,7 +451,7 @@
 		<h5 class="titlepadding text-center">Media</h5>
 		
 		
-		
+  	
     </div>
 	
 	<div class="container-fluid onepagesection sectioncommitte" id="committee">
