@@ -1,6 +1,10 @@
 
 body {
-    /*padding-top: 54px;*/
+    /*background-image: url("../../assests/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    opacity: 0.5;*/
 }
 
 @media (max-width: 767px) {
@@ -18,13 +22,13 @@ body {
     margin: 0;
     /*height: 100vh!important;*/
 }
+
 .nav-link {
     font-size: large;
 }
 
-
 @media screen and (max-width: 767px) {
-    .sectionPadding{
+    .sectionPadding {
         /* Mobile View */
         padding: 50px 10px 50px 10px;
     }
@@ -32,11 +36,10 @@ body {
 
 @media screen and (min-width: 768px) {
     /* Larger Windows */
-    .sectionPadding{
+    .sectionPadding {
         padding: 50px 50px 100px 50px;
     }
 }
-
 
 .onePageSection {
     height: 100vh;
@@ -64,7 +67,7 @@ body {
 
 .sectionAbout {
 
-    background-color: #000000;
+    /*background-color: #000000;*/
     min-height: 100vh;
 }
 
@@ -72,12 +75,16 @@ body {
     background-color: #3953ff;
 }
 
-.sectionVision h5{
+.sectionVision h5 {
     color: #c9c9c9;
 }
 
-.sectionVision p{
+.sectionVision p {
     color: #e7e7e7;
+}
+
+.sectionVision footer {
+    color: #ffffff;
 }
 
 .visionMission {
