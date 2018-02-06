@@ -1,11 +1,11 @@
 
 body {
-    padding-top: 54px;
+    /*padding-top: 54px;*/
 }
 
-@media (min-width: 992px) {
+@media (max-width: 767px) {
     body {
-        padding-top: 56px;
+        padding-top: 76px;
     }
 }
 
@@ -13,16 +13,33 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
 }
 
+#sectionSlider {
+    padding: 0 0 0 0;
+    margin: 0;
+    /*height: 100vh!important;*/
+}
 .nav-link {
     font-size: large;
 }
 
+
+@media screen and (max-width: 767px) {
+    .sectionPadding{
+        /* Mobile View */
+        padding: 50px 10px 50px 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* Larger Windows */
+    .sectionPadding{
+        padding: 50px 50px 100px 50px;
+    }
+}
+
+
 .onePageSection {
     height: 100vh;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .sectionHome {
@@ -46,15 +63,21 @@ body {
 }
 
 .sectionAbout {
-    padding: 100px 50px 100px 50px;
+
     background-color: #000000;
     min-height: 100vh;
 }
 
 .sectionVision {
-    padding: 100px 50px 100px 50px;
-    background-color: #000018;
+    background-color: #3953ff;
+}
 
+.sectionVision h5{
+    color: #c9c9c9;
+}
+
+.sectionVision p{
+    color: #e7e7e7;
 }
 
 .visionMission {
@@ -156,8 +179,8 @@ body {
 /* Committee ---------------------------------------------------------*/
 
 .committeMember {
-    padding: 20px;
-    margin: 10px;
+    padding: 25px;
+    /*margin: 10px;*/
     background: #000011;
 
     -webkit-transition: all 0.5s ease-out;
@@ -167,8 +190,8 @@ body {
 }
 
 .committeMember:hover {
-    padding: 20px;
-    margin: 10px;
+    padding: 15px;
+    /*margin: 5px;*/
     background: rgba(64, 180, 231, 0.25);
 }
 

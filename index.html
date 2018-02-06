@@ -11,14 +11,15 @@
 
     <link href="vendor/bootstrap/css/cyborg-bootstrap.min.css" rel="stylesheet">
     <link href="vendor/css/index.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="vendor/bootstrap/css/slider-style.css">
-    <link rel='stylesheet prefetch' href='vendor/bootstrap/css/slider-global.css'>
+    <link href="vendor/css/slider.css" rel="stylesheet">
+    <link href="vendor/css/w3.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="vendor/bootstrap/css/slider-style.css">
+    <link rel='stylesheet prefetch' href='vendor/bootstrap/css/slider-global.css'>-->
 
     <link rel="shortcut icon" href="assests/logo-32.ico">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="10">
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
 
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-normal">
     <div class="container">
@@ -59,19 +60,22 @@
     </div>
 </nav>
 
-
-<div style="min-height: 100vh;" id="home">
-    <div id="myCarousel" class="carousel carousel-fade slide" data-ride="carousel" data-interval="2500">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active background a"></div>
-            <div class="item background b"></div>
-            <div class="item background c"></div>
+<div id="sectionSlider" class="container-fluid">
+    <div class="slider">
+        <div class="slider-wrapper theme-default">
+            <div id="slider" class="nivoSlider">
+                <img class="slider-img" id="slide1" src="assests/imageslider/1.png" data-transition="fade"
+                     alt="Hackers' Club"/>
+                <img class="slider-img" id="slide2" src="assests/imageslider/2.jpg" data-transition="fade"
+                     alt="Hackers' Club"/>
+                <img class="slider-img" id="slide3" src="assests/imageslider/3.jpg" data-transition="fade"
+                     alt="Hackers' Club"/>
+            </div>
         </div>
     </div>
-
 </div>
 
-<div class="container sectionAbout" id="about">
+<div class="container sectionAbout sectionPadding" id="about">
     <div class="text-center visionMission">
         <blockquote class="blockquote">
             <h5 class="titlePadding">About HACKERS' CLUB</h5>
@@ -94,7 +98,7 @@
     </div>
 </div>
 
-<div class="container-fluid sectionVision" id="vision">
+<div class="container-fluid sectionVision sectionPadding" id="vision">
     <div class="row">
         <div class="col text-center visionmission">
             <blockquote class="blockquote">
@@ -127,7 +131,7 @@
 
 </div>
 
-<div class="container-fluid onePageSection sectionEvent" id="events">
+<div class="container-fluid onePageSection sectionPadding sectionEvent" id="events">
     <h5 class="titlepadding text-center">Annual Events</h5>
 
     <div class="row eventBlock">
@@ -179,18 +183,21 @@
     </div>
 </div>
 
-
 <div class="container-fluid onePageSection sectionMedia" id="media">
     <h5 class="titlepadding text-center">Media</h5>
 
-
+    <div style="min-height: 75vh;" class="w3-padding-64 w3-container w3-black w3-border w3-border-blue">
+        <p>London is the most populous city in the United Kingdom,
+            with a metropolitan area of over 13 million inhabitants.</p>
+    </div>
 </div>
 
-<div class="container-fluid onePageSection sectionCommitte" id="committee">
+<div class="container-fluid onePageSection sectionCommitte sectionPadding " id="committee">
     <h5 class="titlepadding text-center">Committee</h5>
+    <br>
 
     <div class="row">
-        <div class="col text-center committeMember">
+        <div class="col-sm-3 text-center committeMember">
             <img src="assests/logo-grey.png" class="img-thumbnail committee-img" alt="Cinque Terre">
 
             <div class="card-body">
@@ -209,7 +216,7 @@
             </div>
         </div>
 
-        <div class="col text-center committeMember">
+        <div class="col-sm-3 text-center committeMember">
             <img src="assests/logo-grey.png" class="img-thumbnail committee-img" alt="Cinque Terre">
 
             <div class="card-body">
@@ -228,7 +235,7 @@
             </div>
         </div>
 
-        <div class="col text-center committeMember">
+        <div class="col-sm-3 text-center committeMember">
             <img src="assests/logo-grey.png" class="img-thumbnail committee-img" alt="Cinque Terre">
 
             <div class="card-body">
@@ -247,7 +254,7 @@
             </div>
         </div>
 
-        <div class="col text-center committeMember">
+        <div class="col-sm-3 text-center committeMember ">
             <img src="assests/logo-grey.png" class="img-thumbnail committee-img" alt="Cinque Terre">
 
             <div class="card-body">
@@ -270,27 +277,41 @@
     <br><br>
 
     <div class="text-center">
-        <span><a href="committee.html" target="_blank">Past Committies</a></span>
+        <span><a href="committee.html" target="_blank">Past Committees</a></span>
     </div>
 </div>
 
-<div class="container-fluid onePageSection sectionContact" id="contact">
+<div class="container-fluid onePageSection sectionContact sectionPadding" id="contact">
     <h5 class="titlepadding text-center">Contact</h5>
 
+    <h1 style="margin-top: 30vh;" align="center"><a href="#" style="text-decoration: none;">hackersclub@eng.pdn.ac.lk</a></h1>
 </div>
 
-
-<div class="container-fluid footer text-center">
+<div class="container-fluid text-center">
     <p class="text-primary">Copyright © 2018 HACKERS' CLUB, University of Peradeniya. All Rights Reserved.</p>
 
 </div>
 
 <button onclick="topFunction()" id="scrollupBtn" title="Go to top">&#9651;
 </button>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/smooth-scroll.js"></script>
+
+<!-- Replaces missing slider-js.js -Nuwan -->
+<script src="vendor/jquery/jquery.nivo.slider.js"></script>
+
+<!-- bootstrap main script
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+-->
+
 <script>
     // When the user scrolls down 400px from the top of the document, show the button
     window.onscroll = function () {
-        scrollFunction()
+        scrollFunction();
     };
 
     function scrollFunction() {
@@ -306,21 +327,26 @@
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     }
+
+    $(document).ready(function () {
+
+
+        // Slider
+        $('#slider').nivoSlider(
+                {
+                    pauseOnHover: false,
+                    controlNavThumbs: false,
+                    pauseTime: 3000,
+                    animSpeed: 1000,
+                    controlNav: false,
+                    prevText: 'Prev',
+                    nextText: 'Next',
+                    afterLoad: function () {
+                    }
+                });
+    });
 </script>
 
-
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="vendor/bootstrap/js/smooth-scroll.js"></script>
-
-<!-- Replaces missing slider-js.js -Nuwan -->
-<script src="vendor/jquery/jquery.slides.min.js"></script>
-
-<!-- bootstrap main script
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
--->
 
 </body>
 
